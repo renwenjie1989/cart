@@ -8,7 +8,7 @@
 import { incrementCounter } from '../vuex/action'
 export default {
 	vuex: {
-		action: {
+		actions: {
 			increment: incrementCounter
 		}
 	}
