@@ -1,3 +1,6 @@
 export function getCount (state) {
-	return state.count
+	return {
+		count: state.count,
+		message: state.message
+	}
 }
