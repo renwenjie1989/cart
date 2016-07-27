@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<input :value="amount" @input="update">
+		<input :value="valueMessage" @input="update">
 	</div>
 </template>
 
@@ -10,6 +10,11 @@ export default {
 	vuex: {
 		actions: {
 			update: updateAmount
+		}
+	},
+	methods: {
+		update: function(e) {
+			vuex.actions.update(e.target.value)
 		}
 	}
 }
